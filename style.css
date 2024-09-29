@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    cursor: pointer;
+}
+
+.contact-form {
+    background: white;
+    padding: 16px 25px 18px 17px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 38%;
+    height: 74%;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds more space between the fields */
+   
+}
+
+.input-group {
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+label {
+    margin-bottom: 8px; /* Adds space between the label and the input */
+    display: block; /* Ensures label is a block element */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+.checkbox {
+    margin-right: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px 20px 20px 18px;
+        /* margin-top: -15px; */
+        width: 80%;
+        height: 92.5%;
+        margin: 0;
+    }
+
+    h2{
+        font-size: 1.2rem;
+        margin-top: -2px;
+    }
+
+    .input-row {
+        flex-direction: column; /* Stack fields vertically */
+        gap: 10px; /* Adjust gap between fields */
+    }
+    
+    button {
+        padding: 12px; /* Slightly larger button padding */
+    }
+}
